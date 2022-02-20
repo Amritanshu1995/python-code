@@ -1,0 +1,8 @@
+n = input("Enter the strings: ")
+
+for i in n:
+    p = ord(i)+3
+    # print(p)
+    if(p>122):
+        p = p-26
+    print(chr(p))
