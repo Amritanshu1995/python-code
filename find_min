@@ -33,5 +33,29 @@ list.remove(min(list))
 print(f"List after removing the first minimum element from the list is: {list}")
 
 second_min_value_in_list_is = min(list)
+
+
+
+# method to find the second maximum value
+
+a = int(input("enter the size of the list: "))
+list = []
+
+for i in range(a):
+    num = int(input("enter number: "))
+    list.append(num)
+print(f"List before sorting : {list}")
+
+list.sort()
+print(f"List after sorting: {list}")
+list.remove(max(list))
+print(f"List after removing the first maximum element from the list is: {list}")
+
+second_max_value_in_list_is = max(list)
+print(f"The second minimum value in the list is: {second_max_value_in_list_is}")
+
+print("the max value in the list is: ", list[-1])    # getting the max element by their index
+
+
 print(f"The second minimum value in the list is: {second_min_value_in_list_is}")
 
