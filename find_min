@@ -1,0 +1,17 @@
+# find the 2nd minimum value in the list
+
+list = [20, 60, 50, 40, 30, 65, 12, 11]
+print(f"The length of the list is: {len(list)}")
+
+list.sort()  #  sorting the list
+print(f"List after sorting: {list}")
+
+list.remove(min(list))  # removing the first minimum element from the list
+print(f"List after removing minimum value: {list}")
+min = list[0]
+# print(min)
+for i in list:
+    if min>i:
+        min = i
+print(f"The second minimum value in list is: {min}")
+
