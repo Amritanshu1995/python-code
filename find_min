@@ -1,4 +1,4 @@
-# find the 2nd minimum value in the list
+# first method to find the 2nd minimum value in the list
 
 list = [20, 60, 50, 40, 30, 65, 12, 11]
 print(f"The length of the list is: {len(list)}")
@@ -14,4 +14,24 @@ for i in list:
     if min>i:
         min = i
 print(f"The second minimum value in list is: {min}")
+
+
+
+# 2nd method to find the second minimum value
+
+a = int(input("enter the size of the list: "))
+list = []
+
+for i in range(a):
+    num = int(input("enter number: "))
+    list.append(num)
+print(f"List before sorting : {list}")
+
+list.sort()
+print(f"List after sorting: {list}")
+list.remove(min(list))
+print(f"List after removing the first minimum element from the list is: {list}")
+
+second_min_value_in_list_is = min(list)
+print(f"The second minimum value in the list is: {second_min_value_in_list_is}")
 
