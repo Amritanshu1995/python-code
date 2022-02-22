@@ -1,0 +1,29 @@
+#Given an array of integers,
+calculate the ratios of its elements that are positive, 
+negative, and zero. Print the decimal value of each fraction on
+a new line with  places after the decimal.
+
+
+def posneg(arr):
+    pos = 0
+    neg = 0
+    zero = 0
+    for i in range(n):
+        if arr[i]>0:
+            pos += 1
+        elif arr[i]<0:
+            neg += 1
+        else:
+            zero += 1
+    print(pos/n)
+    print(neg/n)
+    print(zero/n)
+
+if __name__ == '__main__':
+    n = int(input("Enter the number of array: "))
+    ar = []
+    for i in range(n):
+        a = int(input("enter num: "))
+        ar.append(a)
+    print(ar)
+    posneg(ar)
