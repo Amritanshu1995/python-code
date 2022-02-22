@@ -1,0 +1,14 @@
+def miniMaxSum(arr):
+    sum_min = 0
+    sum_max = 0
+    for i in arr:
+        sum_min += i
+    sum_min = sum_min - max(arr)
+    for i in arr:
+        sum_max += i
+    sum_max = sum_max - min(arr)
+    
+    print(sum_max,  sum_min)
+if __name__ == '__main__':
+    arr = [1, 2, 3, 4, 5]
+    miniMaxSum(arr)
