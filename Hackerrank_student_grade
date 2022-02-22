@@ -1,0 +1,23 @@
+def grading_student(grades):
+    res = []
+    for i in grades:
+        if i>=38:
+            mod = i%5
+            if mod>=3:
+                i += (5-mod)
+        res.append(i)
+    return res
+
+
+
+if __name__ == '__main__':
+
+    grades_count = int(input("enter count of grades: "))
+    grades = []
+    for i in range(grades_count):
+        a = int(input("enter grades: "))
+        grades.append(a)
+
+    result = grading_student(grades)
+    print(f"Grades without rounding: {grades}")
+    print(f"Grades after rounding: {result}")
