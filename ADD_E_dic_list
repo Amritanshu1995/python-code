@@ -1,0 +1,14 @@
+# adding element in list and dictonary
+
+dic = {}
+s = list()
+for i in range(2):
+    brand = input("enter name of brand: ")
+    p_name = input("enter the name: ")
+    if brand not in dic:
+        dic[brand] = p_name
+
+    if p_name not in s:
+        s.append(p_name)
+print(dic)
+print(s)
