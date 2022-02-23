@@ -1,0 +1,4 @@
+if __name__ == '__main__':
+    n = int(input())
+    integer_list = tuple(map(int, input().split()))   # by default this function gives you the list
+    print(hash(integer_list))       # hash() ----> this function will give the (hash) value of tuple.
