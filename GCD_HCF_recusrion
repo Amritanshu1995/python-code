@@ -1,0 +1,13 @@
+gcd and hcf of a two no with recursion 
+
+
+def GCD(p, q):
+    if q == 0:
+        return p
+    else:
+        return GCD(q, p%q)
+
+p = int(input("enter 1st no: "))
+q = int(input("enter 2nd no: "))
+z = GCD(p, q)
+print(f"the gcd of a no is {z}")
