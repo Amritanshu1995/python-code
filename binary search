@@ -1,0 +1,35 @@
+# searching of element in a sorted array using binary search method
+
+
+
+def binaryfunc(list1, n, key):
+    flag = 0
+    i = 0
+    j = n - 1
+
+    while i <= j and flag == 0:
+        mid = (i + j) // 2
+
+        if (list1[mid] == key):
+            flag = 1
+            pos = mid +1
+        if (list1[mid] > key):
+             j = mid - 1
+
+        if (list1[mid] < key):
+             i = mid + 1
+
+    if flag == 1:
+        print(f"the number is found at position {pos}")
+
+    else:
+        print("not found")
+
+
+list1 = []
+n = int(input("how many element you want: "))
+for i in range(n):
+    val = int(input("enter no in ascending order: "))
+    list1.append(val)
+key = int(input("enter which element you want to search: "))
+binaryfunc(list1, n, key)
