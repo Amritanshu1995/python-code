@@ -1,0 +1,11 @@
+# program for datetime
+
+import datetime
+
+Today = datetime.datetime.today()
+print(Today)
+tomorrow_date = Today + datetime.timedelta(days=1)
+print(tomorrow_date)
+
+yesterday_date = Today - datetime.timedelta(days=1)
+print(yesterday_date)
