@@ -6,7 +6,12 @@ print(str1)
 l = list(str1)
 print(l)
 # print(l.count('a'))
-
+a1 = []
 for i in l:
     a = l.count(i)
+    a1.append(a)
     print(i + " =", a, end=", ")
+print(" ")
+
+d = dict(zip(l, a1))   # this will form a dictonary
+print(d)
