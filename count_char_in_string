@@ -1,0 +1,12 @@
+# count frequency of character in a string.
+
+str1 = input("enter the string: ")
+
+print(str1)
+l = list(str1)
+print(l)
+# print(l.count('a'))
+
+for i in l:
+    a = l.count(i)
+    print(i + " =", a, end=", ")
