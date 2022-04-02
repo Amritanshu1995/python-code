@@ -1,0 +1,15 @@
+# program to find wheather the no. is pronic or not
+# a number is said to be pronic when the product of two consecutive no is equal to the taken no.
+
+
+n = int(input("enter the number: "))
+flag = 0
+for i in range(1, n+1):
+    if (i*(i+1) == n):
+        flag = 1
+        break
+
+if flag == 1:
+    print("Number is pronic")
+else:
+    print("No is not pronic")
