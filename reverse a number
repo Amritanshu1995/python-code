@@ -1,0 +1,9 @@
+# logic to reverse a number
+
+
+n = int(input("enter the number which you want to reverse: "))
+rev = 0
+while (n>0):
+    rev = (rev * 10) + n % 10
+    n = n//10
+print(f"the reverse of a given number is: {rev}")
