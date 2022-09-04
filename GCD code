@@ -1,0 +1,10 @@
+def computeGcd(a, b):
+    if b==0:
+        return a
+    else:
+        return computeGcd(b, a%b)
+
+num1 = int(input("enter the first number: "))
+num2 = int(input("enter the second number: "))
+d = computeGcd(num1, num2)
+print(d)
